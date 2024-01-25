@@ -1,5 +1,5 @@
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,7 +8,7 @@
 .app {
   width: 800px;
   height: 100vh;
-  border-radius: 12px;
+  border-radius: 10px;
   background-image: linear-gradient(
     to bottom right,
     rgb(0, 200, 255),
@@ -18,17 +18,16 @@
 
 .overlay {
   width: 100%;
-  height: 100vh;
-  /* background-color: var(--background-overlay); */
+  height: 100%;
 }
 
 .container {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
   padding: 1rem;
 }
 
@@ -43,7 +42,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: var(--section-overlay); */
 }
 
 .section__inputs > input {
@@ -84,7 +82,7 @@
 
 .icon > h3 {
   font-size: 15px;
-  font-weight: 200;
+  font-weight: bold;
   text-transform: capitalize;
 }
 
